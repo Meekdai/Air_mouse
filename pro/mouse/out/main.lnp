@@ -1,0 +1,21 @@
+--cpu Cortex-M3
+".\lib\STM32_lib_3.0.lib"
+".\out\core_cm3.o"
+".\out\system_stm32f10x.o"
+".\out\startup_stm32f10x_hd.o"
+".\out\main.o"
+".\out\stm32f10x_it.o"
+".\out\gpio.o"
+".\out\usart.o"
+".\out\delay.o"
+".\out\mpu6050.o"
+".\out\iic.o"
+".\out\spi.o"
+".\out\nrf24l01.o"
+".\out\24cxx.o"
+".\out\tim.o"
+".\out\adc.o"
+--library_type=microlib --strict --scatter ".\out\main.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\out\main.map" -o .\out\main.axf
